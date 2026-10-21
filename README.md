@@ -2,21 +2,21 @@
 
 **Live: https://nikahfix.xsrazy.web.id**
 
-NikahFix adalah undangan pernikahan digital untuk Usra & Azizi Asadel, dikemas dengan gaya ala Netflix. Tamu memilih namanya sendiri di layar pembuka untuk masuk ke undangan.
+NikahFix is a digital wedding invitation for Usra & Azizi Asadel, styled after Netflix. Guests pick their own name on the opening screen to enter the invitation addressed to them.
 
-## Isi Web
+## Site Contents
 
-- **Layar pembuka "Who's Watching":** tamu menekan namanya (CLICK YOUR NAME) untuk membuka undangan yang ditujukan untuknya, meniru layar pilih profil Netflix.
-- **Isi undangan:** detail acara pernikahan untuk tamu yang membuka.
-- **Ucapan dan doa (wishes):** tamu bisa menulis ucapan; daftar ucapan tampil di halaman dan tersimpan di backend. Saat terakhir dicek ada 11 ucapan tersimpan.
+- **"Who's Watching" opening screen:** the guest taps their name (CLICK YOUR NAME) to open their invitation, mimicking the Netflix profile picker.
+- **Invitation content:** the wedding event details for the guest who opened it.
+- **Wishes:** guests can write greetings and well-wishes; the list is shown on the page and stored in the backend. At the last check there were 11 stored wishes.
 
 ## Frontend
 
-- Vite + React single page application (repo ini hanya berisi frontend).
-- Tema visual mengikuti gaya antarmuka Netflix: gelap, merah, dan layar pilih profil.
+- Vite + React single page application (this repo contains only the frontend).
+- The visual theme follows the Netflix interface: dark, red accents, and a profile selection screen.
 
 ## Backend
 
-- Backend berada di repo terpisah: `nikahfix-be` (Express + Supabase).
-- Backend menyimpan ucapan di tabel `wishs` pada database Supabase project `nikahfix`, dan menyediakan endpoint untuk mengirim serta membaca ucapan.
-- Akses backend dikunci berdasarkan Origin/Referer: hanya situs nikahfix.xsrazy.web.id, nikahfix.web.id, deployment Vercel project ini, dan localhost yang dilayani; permintaan dari origin lain ditolak 403.
+- The backend lives in a separate repo: `nikahfix-be` (Express + Supabase).
+- It stores wishes in the `wishs` table of the `nikahfix` Supabase project and provides the endpoints to submit and read wishes.
+- Backend access is locked by Origin/Referer: only nikahfix.xsrazy.web.id, nikahfix.web.id, this project's Vercel deployments, and localhost are served; requests from other origins are rejected with 403.
