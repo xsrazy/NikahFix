@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nikahfix.xsrazy.web.id/sitemap.xml
