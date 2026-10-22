@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nikahfix.xsrazy.web.id/sitemap.xml
+
+# Nikahfix - Usra & Zee: Menikah, coming soon 17 Januari 2050
