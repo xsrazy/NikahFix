@@ -17,6 +17,10 @@ NikahFix is a digital wedding invitation for Usra & Azizi Asadel, styled after N
 
 ## Backend
 
-- The backend lives in a separate repo: `nikahfix-be` (Express + Supabase).
+- The backend lives in a separate repo: `nikahfix-be-v2` (Express + Supabase).
 - It stores wishes in the `wishs` table of the `nikahfix` Supabase project and provides the endpoints to submit and read wishes.
 - Backend access is locked by Origin/Referer: only nikahfix.xsrazy.web.id, nikahfix.web.id, this project's Vercel deployments, and localhost are served; requests from other origins are rejected with 403.
+
+## Credits
+
+NikahFix is based on the open-source NikahFix project originally created by [janexmgd](https://github.com/janexmgd). Thank you to the original author for building the template this site is based on.
