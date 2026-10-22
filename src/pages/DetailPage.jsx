@@ -435,7 +435,7 @@ const DetailPage = () => {
             </div>
             <div className='mt-5 text-xs cursor-pointer text-center mb-5'>
               <a
-                href='https://xsrazy.my.id'
+                href='https://github.com/xsrazy/NikahFix'
                 target='_blank'
                 rel='noopener noreferrer'
               >
