@@ -16,13 +16,13 @@ const HomePage = () => {
     <div className='flex w-full bg-black h-svh text-white'>
       {!isOpen ? (
         <div className='mt-16 flex flex-col w-full items-center max-h-svh'>
-          <img src={nikahFixLogo} alt='NikahFix Logo' className='nf-picker-logo w-32 h-auto' />
-          <p className='nf-picker-title mt-16 font-sans text-lg'>Who's Watching</p>
+          <img src={nikahFixLogo} alt='NikahFix Logo' className='w-32 h-auto' />
+          <p className='mt-16 font-sans text-lg'>Who's Watching</p>
           <div
             className='mt-10 hover:scale-125 flex flex-col items-center transition-transform duration-200 cursor-pointer'
             onClick={() => setIsOpen(true)}
           >
-            <img src={guestIcon} alt='Guest Icon' className='nf-picker-avatar w-24 h-auto' />
+            <img src={guestIcon} alt='Guest Icon' className='w-24 h-auto' />
             <p className='mt-2'>Guest</p>
           </div>
           <div className='mt-16 uppercase text-xs text-gray-500 outline outline-1 outline-gray-500 p-1'>
@@ -31,20 +31,20 @@ const HomePage = () => {
         </div>
       ) : (
         <div className='flex w-full flex-col items-center cursor-not-allowed h-svh'>
-          <div className='nf-hero-wrap w-full max-w-md mx-auto h-full flex flex-col'>
+          <div className='w-full max-w-md mx-auto h-full flex flex-col'>
             <div
-              className='nf-hero relative w-full flex-grow bg-cover bg-center flex flex-col justify-end max-w-md'
+              className='relative w-full flex-grow bg-cover bg-center flex flex-col justify-end max-w-md'
               style={{ backgroundImage: `url(${Image})` }}
             >
-              <div className='nf-hero-gradient absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent' />
-              <div className='nf-hero-content relative z-10 flex flex-col justify-end p-4'>
+              <div className='absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent' />
+              <div className='relative z-10 flex flex-col justify-end p-4'>
                 <img
                   src={nikahFixLogo}
                   alt='NikahFix Logo'
-                  className='nf-hero-logo w-20 h-auto mb-4'
+                  className='w-20 h-auto mb-4'
                 />
-                <p className='nf-hero-title text-2xl font-sans font-bold'>Usra & Zee:</p>
-                <p className='nf-hero-title text-2xl font-sans font-bold mb-4'>
+                <p className='text-2xl font-sans font-bold'>Usra & Zee:</p>
+                <p className='text-2xl font-sans font-bold mb-4'>
                   Sebelum Hari H
                 </p>
                 <div className='mb-4'>
@@ -71,7 +71,7 @@ const HomePage = () => {
                   ))}
                 </div>
                 <div
-                  className='nf-hero-cta mt-2 flex flex-col items-center cursor-pointer pb-8'
+                  className='mt-2 flex flex-col items-center cursor-pointer pb-8'
                   onClick={handleClick}
                 >
                   <ChevronUp className='w-12 h-12 animate-bounce' />

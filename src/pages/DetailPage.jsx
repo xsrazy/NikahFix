@@ -82,8 +82,8 @@ const DetailPage = () => {
 
   return !loading ? (
     <div className='flex w-full bg-black text-white pb-4 cursor-not-allowed'>
-      <div className='nf-detail-wrap w-full max-w-md mx-auto flex flex-col relative flex-grow'>
-        <div className='nf-video-wrap top-0 left-0 right-0'>
+      <div className='w-full max-w-md mx-auto flex flex-col relative flex-grow'>
+        <div className='top-0 left-0 right-0'>
           <ReactPlayer
             url={video}
             loop={true}
@@ -93,7 +93,7 @@ const DetailPage = () => {
             style={{ aspectRatio: '16 / 9' }}
           />
         </div>
-        <div className='nf-detail-inner mt-4 px-4'>
+        <div className='mt-4 px-4'>
           <div className='flex flex-wrap font-sans'>
             <img src={netflixLogo} alt='NikahFix Logo' className='w-4 h-auto' />
             <span className='font-sans pl-1 text-gray-500 text-xs font-medium uppercase'>
@@ -101,10 +101,10 @@ const DetailPage = () => {
             </span>
           </div>
           <div className='flex flex-col mt-2'>
-            <div className='nf-detail-title text-white text-xl font-sans font-bold'>
+            <div className='text-white text-xl font-sans font-bold'>
               Usra & Zee: Menikah
             </div>
-            <div className='nf-meta-row flex items-center'>
+            <div className='flex items-center'>
               <span className='text-green-500'>100% match</span>
               <span className='bg-slate-500 text-xs ml-2 px-1 py-0 rounded-sm'>
                 SU
@@ -113,11 +113,11 @@ const DetailPage = () => {
               <img src={logo4k} alt='logo4k' className='ml-2' />
               <img src={logo4k} alt='logo4k' className='ml-2' />
             </div>
-            <div className='nf-synopsis-wrap flex flex-col mt-2'>
+            <div className='flex flex-col mt-2'>
               <span className='bg-[#E50913] px-2 py-0 max-w-fit flex items-center justify-center rounded-sm'>
                 Coming soon on Monday, 17 Januari 2050.
               </span>
-              <div className='nf-synopsis text-white mt-2'>
+              <div className='text-white mt-2'>
                 Setelah Usra Dan Zee dipertemukan di Antah-berantah dalam kondisi
                 tepat dimana keduanya telah siap untuk memulai hubungan
                 bersama, tibalah mereka di awal perjalanan baru, yaitu menuju
@@ -128,7 +128,7 @@ const DetailPage = () => {
                 mengingat (kebesaran Allah)" (Q.S Az-Zariyah: 49).
               </div>
             </div>
-            <div className='nf-section-breaking mt-6'>
+            <div className='mt-6'>
               <header className='text-lg font-bold'>Breaking News</header>
               <img
                 src={Header}
@@ -161,9 +161,9 @@ const DetailPage = () => {
                 </p>
               </div>
             </div>
-            <div className='nf-section-couple mt-6'>
+            <div className='mt-6'>
               <header className='text-lg font-bold'>Bride and Groom</header>
-              <div className='nf-couple-grid grid grid-cols-2 w-full gap-4'>
+              <div className='grid grid-cols-2 w-full gap-4'>
                 <div className='flex flex-col'>
                   <img
                     src={lovely1}
@@ -196,12 +196,12 @@ const DetailPage = () => {
                 </div>
               </div>
             </div>
-            <div className='nf-section-story mt-6'>
+            <div className='mt-6'>
               <header className='text-lg font-bold'>Our Love Story</header>
               <div className='grid grid-cols-1 gap-4'>
                 {/* Episode1 */}
                 <div className='flex flex-col'>
-                  <div className='nf-episode grid grid-cols-2 gap-5'>
+                  <div className='grid grid-cols-2 gap-5'>
                     <img
                       src={lovely3}
                       alt=''
@@ -209,7 +209,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='nf-ep-cell flex flex-col justify-center'>
+                    <div className='flex flex-col justify-center'>
                       <div className='text-white'>
                         Episode 1: How We Meet Each Other that Time
                       </div>
@@ -219,13 +219,13 @@ const DetailPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className='nf-episode-desc text-[#A3A1A1] text-sm'>
+                <div className='text-[#A3A1A1] text-sm'>
                   Usra dan Zee pertama kali bertemu di Antah-berantah. Karena
                   sering memiliki kepentingan yang gatau dah, Zee jadi sering
                   bertemu dengan Usra.
                 </div>
                 <div className='flex flex-col'>
-                  <div className='nf-episode grid grid-cols-2 gap-5'>
+                  <div className='grid grid-cols-2 gap-5'>
                     <img
                       src={lovely4}
                       alt=''
@@ -233,7 +233,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='nf-ep-cell flex flex-col justify-center'>
+                    <div className='flex flex-col justify-center'>
                       <div className='text-white'>
                         Episode 2: A Love That Grows With Time
                       </div>
@@ -243,12 +243,12 @@ const DetailPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className='nf-episode-desc text-[#A3A1A1]  text-sm'>
+                <div className='text-[#A3A1A1]  text-sm'>
                   Hari demi Hari terlewati rasa cinta pun tumbuh diantara mereka
                   berdua.
                 </div>
                 <div className='flex flex-col'>
-                  <div className='nf-episode grid grid-cols-2 gap-5'>
+                  <div className='grid grid-cols-2 gap-5'>
                     <img
                       src={lovely5}
                       alt=''
@@ -256,7 +256,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='nf-ep-cell flex flex-col justify-center'>
+                    <div className='flex flex-col justify-center'>
                       <div className='text-white'>
                         Episode 3: Choose to Spend Life Together
                       </div>
@@ -266,12 +266,12 @@ const DetailPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className='nf-episode-desc text-[#A3A1A1] text-sm'>
+                <div className='text-[#A3A1A1] text-sm'>
                   Seringkali Usra memberitahu kepada Zee bahwa ia tertarik
                   dan ingin menjalanin Hubungan lebih serius.
                 </div>
                 <div className='flex flex-col'>
-                  <div className='nf-episode grid grid-cols-2 gap-5'>
+                  <div className='grid grid-cols-2 gap-5'>
                     <img
                       src={lovely6}
                       alt=''
@@ -279,7 +279,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='nf-ep-cell flex flex-col justify-center'>
+                    <div className='flex flex-col justify-center'>
                       <div className='text-white'>
                         [Coming Soon] Final Episode: The Beginning of Forever
                       </div>
@@ -289,14 +289,14 @@ const DetailPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className='nf-episode-desc text-[#A3A1A1]  text-sm'>
+                <div className='text-[#A3A1A1]  text-sm'>
                   Kasihan VVOTA halu cuy 😭☝
                 </div>
               </div>
             </div>
-            <div className='nf-section-gallery mt-6'>
+            <div className='mt-6'>
               <header className='text-lg font-bold'>Our Love Gallery</header>
-              <div className='nf-gallery grid grid-cols-3 gap-3'>
+              <div className='grid grid-cols-3 gap-3'>
                 <img
                   src={Image1}
                   alt=''
@@ -362,10 +362,10 @@ const DetailPage = () => {
                 />
               </div>
             </div>
-            <div className='nf-section-wish mt-6'>
+            <div className='mt-6'>
               <header className='text-lg font-bold'>Wish for the couple</header>
               <div
-                className='nf-wish-list max-h-[55svh] min-h-[15svh] overflow-y-auto mt-2 bottom-0'
+                className='max-h-[55svh] min-h-[15svh] overflow-y-auto mt-2 bottom-0'
                 ref={scrollCommentRef}
               >
                 {!loading &&
@@ -389,7 +389,7 @@ const DetailPage = () => {
                   ))}
               </div>
 
-              <form onSubmit={handleSubmit} className='nf-wish-form space-y-4 mt-4 relative'>
+              <form onSubmit={handleSubmit} className='space-y-4 mt-4 relative'>
                 <div className='pb-2'>
                   <label htmlFor='' className='mb-2 font-sans'>
                     Name
