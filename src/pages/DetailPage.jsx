@@ -83,7 +83,7 @@ const DetailPage = () => {
   return !loading ? (
     <div className='flex w-full bg-black text-white pb-4 cursor-not-allowed'>
       <div className='nf-detail-wrap w-full max-w-md mx-auto flex flex-col relative flex-grow'>
-        <div className='top-0 left-0 right-0'>
+        <div className='nf-video-wrap top-0 left-0 right-0'>
           <ReactPlayer
             url={video}
             loop={true}
@@ -104,7 +104,7 @@ const DetailPage = () => {
             <div className='nf-detail-title text-white text-xl font-sans font-bold'>
               Usra & Zee: Menikah
             </div>
-            <div className='flex items-center'>
+            <div className='nf-meta-row flex items-center'>
               <span className='text-green-500'>100% match</span>
               <span className='bg-slate-500 text-xs ml-2 px-1 py-0 rounded-sm'>
                 SU
@@ -113,7 +113,7 @@ const DetailPage = () => {
               <img src={logo4k} alt='logo4k' className='ml-2' />
               <img src={logo4k} alt='logo4k' className='ml-2' />
             </div>
-            <div className='flex flex-col mt-2'>
+            <div className='nf-synopsis-wrap flex flex-col mt-2'>
               <span className='bg-[#E50913] px-2 py-0 max-w-fit flex items-center justify-center rounded-sm'>
                 Coming soon on Monday, 17 Januari 2050.
               </span>
@@ -209,7 +209,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='flex flex-col justify-center'>
+                    <div className='nf-ep-cell flex flex-col justify-center'>
                       <div className='text-white'>
                         Episode 1: How We Meet Each Other that Time
                       </div>
@@ -233,7 +233,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='flex flex-col justify-center'>
+                    <div className='nf-ep-cell flex flex-col justify-center'>
                       <div className='text-white'>
                         Episode 2: A Love That Grows With Time
                       </div>
@@ -256,7 +256,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='flex flex-col justify-center'>
+                    <div className='nf-ep-cell flex flex-col justify-center'>
                       <div className='text-white'>
                         Episode 3: Choose to Spend Life Together
                       </div>
@@ -279,7 +279,7 @@ const DetailPage = () => {
                       style={{ aspectRatio: '16 / 9' }}
                       className='mt-2 rounded-2xl'
                     />
-                    <div className='flex flex-col justify-center'>
+                    <div className='nf-ep-cell flex flex-col justify-center'>
                       <div className='text-white'>
                         [Coming Soon] Final Episode: The Beginning of Forever
                       </div>
